@@ -25,7 +25,7 @@ SECRET_KEY = ')yb0a1r5fk3r&!wqlk8x)6c$#%r))i_ftj$9rn0#*rwq_if!x$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','miniurlbyhuzaifa.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','minidjango.herokuapp.com']
 
 
 # Application definition
