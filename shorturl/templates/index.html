@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      *{
+  margin:0;
+  padding:0;
+}
+
+body{
+  margin:0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:17px;
+  color:#926239;
+  line-height:1.6;
+}
+
+#showcase{
+  background-image:url('https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-computer-code-technology-advertising-image_165748.jpg');
+  background-size:cover;
+  background-position:center;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 20px;
+}
+
+#showcase h1{
+  font-size:50px;
+  line-height:1.2;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+#showcase .button{
+  font-size:18px;
+  text-decoration:none;
+  color:#FFFFFF;
+  border:#926239 1px solid;
+  padding:10px 20px;
+  border-radius:10px;
+  margin-top:20px;
+}
+
+#showcase .button:hover{
+  background:#926239;
+  color:#fff;
+}
+
+
+
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Url Shortener</title>
+  </head>
+  <body>
+
+    <header id="showcase">
+      <h1 style="color: white;">Url Shortener Made With Python & Django</h1>
+      <p style="color: white;">I am a student of standard 10th. I am learning python since last 9-10 months. Also I have practicing Django since last 1 month. This is a simple Django Project that I made with the help of Python, Django, HTML5 and CSS3. I thought of this idea by myself.</p>
+      <form action="shorturl/" method="post">{%csrf_token%}
+        <div class="form-group">
+          <strong><label style="color: white;" for="exampleInputEmail1">Paste Your Long Url Here...</label></strong>
+          <input style="width: 500px;" type="text" class="form-control" name="text" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn btn-primary">Make Short</button>
+      </form>
+    </header>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
